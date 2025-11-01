@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><title>Callback</title>
+<h1>OK</h1><p id="out">Esperando código…</p>
+<script>
+const c = new URLSearchParams(location.search).get('code');
+document.getElementById('out').textContent = c ? ('code: ' + c) : 'Falta ?code=';
+</script>
